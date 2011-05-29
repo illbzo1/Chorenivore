@@ -1,0 +1,23 @@
+<h1>Chorenivore</h1>
+<hr>
+<table>
+  <tr>
+    <th>Task</th>
+    <th>Description</th>
+    <th>Finished?</th>
+  </tr>
+
+<% @tasks.each do |task| %>
+  <tr>
+    <td><%= task.name %></td>
+    <td><%= task.description %></td>
+    <td><%= task.finished? ? 'Yes' : 'No' %></td>
+    
+    <td><%= link_to 'Edit', edit_task_path(task) %></td>
+    <td><%= link_to 'Delete', task, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<hr>
+<%= link_to 'New Task', new_task_path %>
+

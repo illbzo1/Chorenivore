@@ -1,0 +1,20 @@
+What's up with this project?
+
+Chorenivore is the (working) title of a to-do list application I'm working on. It's based on some older tutorials I found and I'm branching out to add more functionality.
+
+It's also serving as my first ADVENTURE into github.
+
+To do:
+
+A way to toggle between Yes/No in the Finished? column from the view
+Making flash notices disappear after a few seconds
+If there are no tasks, the view will not display the Task / Description / Finished? columns. Instead display something along the lines of "Nothing has been entered yet. Create some tasks!"
+Change all instances of task to chore, to fit with the name.
+Display age of tasks in the view, then allowing users to sort by age.
+
+---
+
+Second commit
+
+Editing a task now redirects to tasks_path rather than @task
+Deleting a task now notifies the user the task has been deleted
