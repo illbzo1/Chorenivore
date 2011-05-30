@@ -4,14 +4,19 @@
   <tr>
     <th>Task</th>
     <th>Description</th>
+    <th>Created</th>
     <th>Finished?</th>
+    
   </tr>
 
 <% @tasks.each do |task| %>
   <tr>
     <td><%= task.name %></td>
     <td><%= task.description %></td>
+     <td><%= task.created_at.strftime("%b %d, %Y")  %></td>
     <td><%= task.finished? ? 'Yes' : 'No' %></td>
+   
+    </p>
     
     <td><%= link_to 'Edit', edit_task_path(task) %></td>
     <td><%= link_to 'Delete', task, :confirm => 'Are you sure?', :method => :delete %></td>
