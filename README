@@ -18,3 +18,9 @@ Second commit
 
 Editing a task now redirects to tasks_path rather than @task
 Deleting a task now notifies the user the task has been deleted
+
+---
+
+Added a date column
+
+I've added a Created column to the task view. Not sure if I want to keep it in this format, or figure out a way to subtract created_at from time.now and just show the age of the task. My thinking is if I had a way to calculate the age of a task, I could set up a way to flag tasks that are a certain age, such as a week or a month, and automatically mark them as higher priority. This is all blue-sky solutioneering at this point, however!
