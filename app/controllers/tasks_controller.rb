@@ -69,6 +69,14 @@ class TasksController < ApplicationController
     end
   end
   
+  #def finish
+     #{ redirect_to(tasks_path, :notice => 'Task completed!') }
+  #end
+
+  #def unfinish
+     #{ redirect_to(tasks_path, :notice => 'Did you forget something?') }
+  #end
+  
   # DELETE /tasks/1
   # DELETE /tasks/1.xml
   def destroy
