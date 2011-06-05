@@ -1,40 +1,8 @@
 <h1>Chorenivore</h1>
-<hr>
-<table>
-  <tr>
-    <th>Done</th>
-    <th>Task</th>
-    <th>Description</th>
-    <th>Created</th>
-    
-  </tr>
-
-<% @tasks.each do |task| %>
-  <tr>
-  <td>
-  <%= form_for(task) do |f| %>
-    <%= f.hidden_field :finished, :value => !task.finished %>
-    <div class="actions">
-      <% if task.finished %>
-        <%= image_submit_tag 'finished.png' %>
-      <% else %>
-        <%= image_submit_tag 'unfinished.png' %>
-      <% end %>
-    </div>
-  <% end %>
-  </td>
-  <td><%= task.finished? ? 'Yes' : 'No' %></td>
-    <td><%= task.name %></td>
-    <td><%= task.description %></td>
-    <td><%= task.created_at.to_s(:simple_date) %></td>
-   
-    </p>
-    
-    <td><%= link_to 'Edit', edit_task_path(task) %></td>
-    <td><%= link_to 'Delete', task, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+Welcome to Chorenivore! Chorenivore is an easy-to-use web based to-do list application. Dig right in and get your productivity right!
+<% if @tasks.blank? %>
+<%= render 'notask' %>
+<% else %>
+<%= render 'yestask' %>
 <% end %>
-</table>
-<hr>
-<%= link_to 'New Task', new_task_path %>
 

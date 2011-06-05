@@ -30,3 +30,9 @@ I've added a Created column to the task view. Not sure if I want to keep it in t
 Added button technology
 
 Pretty big update. jar helped me out and showed me a way to update a task's done status in the view using a hidden field and some buttons. So I fired up Illustrator and Photoshop and made some custom buttons. I've also formatted the date using an initializer. I've been thinking about adding a multi-step task functionality, that would allow a user to create a task with multiple steps, then display a percentage of the task completed in the view as a user completes steps. 
+
+---
+
+View update
+
+The view no longer shows the headings for tasks unless a task has been created. I woke up this morning with the idea to use a partial to solve this problem and lo and behold it works! Is it elegant? I don't know! Does it work? YES
