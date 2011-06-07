@@ -36,3 +36,9 @@ Pretty big update. jar helped me out and showed me a way to update a task's done
 View update
 
 The view no longer shows the headings for tasks unless a task has been created. I woke up this morning with the idea to use a partial to solve this problem and lo and behold it works! Is it elegant? I don't know! Does it work? YES
+
+---
+
+First styling
+
+Added some quick styling, mostly to improve the display of the Tasks table. I may have gotten a little carried away trying to sex this thing up prematurely. I also took the boolean task.finished? field out of the view, since that information is handled by the hidden field and the form_for buttons. Speaking of buttons, I edited them to have a transparent background, as well. I'd forgotten they had a white background until I started messing around with the CSS.

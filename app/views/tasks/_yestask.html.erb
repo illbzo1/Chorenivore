@@ -6,6 +6,11 @@
     <th>Created</th>
     
   </tr>
+<% if @task == @current_task %>
+<tr id = "current_task">
+<% else %>
+<tr>
+<% end %>
 
 <% @tasks.each do |task| %>
   <tr>
@@ -21,17 +26,16 @@
     </div>
   <% end %>
   </td>
-  <td><%= task.finished? ? 'Yes' : 'No' %></td>
     <td><%= task.name %></td>
     <td><%= task.description %></td>
     <td><%= task.created_at.to_s(:simple_date) %></td>
    
     </p>
     
-    <td><%= link_to 'Edit', edit_task_path(task) %></td>
-    <td><%= link_to 'Delete', task, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Edit', edit_task_path(task) %>
+    <%= link_to 'Delete', task, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
-<hr>
-<%= link_to 'New Task', new_task_path %>
+<hr />
+<%= link_to 'Add Another Task', new_task_path %>

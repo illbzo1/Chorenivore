@@ -7402,3 +7402,1356 @@ Started GET "/tasks" for 127.0.0.1 at Sun Jun 05 09:55:45 -0400 2011
 Rendered tasks/_yestask.html.erb (7.0ms)
 Rendered tasks/index.html.erb within layouts/application (10.9ms)
 Completed 200 OK in 23ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 06 17:50:03 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (24.8ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (98.7ms)
+Rendered tasks/index.html.erb within layouts/application (126.8ms)
+Completed 200 OK in 244ms (Views: 161.7ms | ActiveRecord: 24.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 06 17:55:27 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.3ms)
+Rendered tasks/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 24ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at Mon Jun 06 17:55:30 -0400 2011
+  Processing by TasksController#new as HTML
+Rendered tasks/new.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 55ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at Mon Jun 06 17:55:36 -0400 2011
+  Processing by TasksController#create as HTML
+  Parameters: {"commit"=>"Create Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "task"=>{"name"=>"Test", "description"=>"Test"}}
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (12.8ms)[0m  INSERT INTO "tasks" ("name", "finished", "created_at", "description", "updated_at") VALUES ('Test', NULL, '2011-06-06 21:55:36.210221', 'Test', '2011-06-06 21:55:36.210221')
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 178ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 17:55:36 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (9.3ms)
+Rendered tasks/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 25ms (Views: 19.5ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 17:56:17 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (9.0ms)
+Rendered tasks/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 25ms (Views: 19.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at Mon Jun 06 17:56:20 -0400 2011
+  Processing by TasksController#new as HTML
+Rendered tasks/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 22ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at Mon Jun 06 17:56:24 -0400 2011
+  Processing by TasksController#create as HTML
+  Parameters: {"commit"=>"Create Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "task"=>{"name"=>"AA", "description"=>"AAA"}}
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "tasks" ("created_at", "finished", "name", "updated_at", "description") VALUES ('2011-06-06 21:56:24.187135', NULL, 'AA', '2011-06-06 21:56:24.187135', 'AAA')[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 74ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 17:56:24 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (10.8ms)
+Rendered tasks/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 26ms (Views: 20.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 17:57:22 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (73.2ms)
+Rendered tasks/index.html.erb within layouts/application (77.2ms)
+Completed 200 OK in 90ms (Views: 83.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at Mon Jun 06 17:57:25 -0400 2011
+  Processing by TasksController#new as HTML
+Rendered tasks/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 20ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at Mon Jun 06 17:57:29 -0400 2011
+  Processing by TasksController#create as HTML
+  Parameters: {"commit"=>"Create Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "task"=>{"name"=>"aa", "description"=>"aaa"}}
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "tasks" ("description", "updated_at", "created_at", "finished", "name") VALUES ('aaa', '2011-06-06 21:57:29.488652', '2011-06-06 21:57:29.488652', NULL, 'aa')
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 14ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 17:57:29 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (73.3ms)
+Rendered tasks/index.html.erb within layouts/application (77.0ms)
+Completed 200 OK in 88ms (Views: 82.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/tasks/28" for 127.0.0.1 at Mon Jun 06 17:57:34 -0400 2011
+  Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "id"=>"28"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 28 LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mDELETE FROM "tasks" WHERE "tasks"."id" = 28[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 15ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 17:57:34 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (11.3ms)
+Rendered tasks/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 28ms (Views: 21.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/tasks/29" for 127.0.0.1 at Mon Jun 06 17:57:37 -0400 2011
+  Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "id"=>"29"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 29 LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = 29
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 15ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 17:57:37 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (9.3ms)
+Rendered tasks/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 25ms (Views: 19.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/tasks/30" for 127.0.0.1 at Mon Jun 06 17:57:39 -0400 2011
+  Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "id"=>"30"}
+  [1m[35mTask Load (0.3ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 30 LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mDELETE FROM "tasks" WHERE "tasks"."id" = 30[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 15ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 17:57:39 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.2ms)
+Rendered tasks/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 23ms (Views: 16.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tasks/31/edit" for 127.0.0.1 at Mon Jun 06 17:57:47 -0400 2011
+  Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1[0m
+Rendered tasks/edit.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 46ms (Views: 39.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tasks/31" for 127.0.0.1 at Mon Jun 06 17:57:49 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"commit"=>"Update Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"31", "task"=>{"name"=>"aa", "description"=>"aaaagaga"}}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "tasks" SET "description" = 'aaaagaga', "updated_at" = '2011-06-06 21:57:49.862912' WHERE "tasks"."id" = 31[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 15ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 17:57:49 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.1ms)
+Rendered tasks/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 23ms (Views: 16.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 17:58:56 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (70.1ms)
+Rendered tasks/index.html.erb within layouts/application (74.3ms)
+Completed 200 OK in 88ms (Views: 79.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/31/edit" for 127.0.0.1 at Mon Jun 06 18:03:12 -0400 2011
+  Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1
+Rendered tasks/edit.html.erb within layouts/application (50.5ms)
+Completed 200 OK in 109ms (Views: 74.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tasks/31" for 127.0.0.1 at Mon Jun 06 18:03:16 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"commit"=>"Update Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"31", "task"=>{"name"=>"aa", "description"=>"aaaagagaaafafa"}}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1[0m
+  [1m[35mAREL (41.5ms)[0m  UPDATE "tasks" SET "updated_at" = '2011-06-06 22:03:16.310723', "description" = 'aaaagagaaafafa' WHERE "tasks"."id" = 31
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 56ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:03:16 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (8.6ms)
+Rendered tasks/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 145ms (Views: 139.6ms | ActiveRecord: 42.2ms)
+
+
+Started GET "/tasks/31/edit" for 127.0.0.1 at Mon Jun 06 18:03:30 -0400 2011
+  Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1
+Rendered tasks/edit.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 48ms (Views: 16.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tasks/31" for 127.0.0.1 at Mon Jun 06 18:03:33 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"commit"=>"Update Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"31", "task"=>{"name"=>"aa", "description"=>"aaaagagaaafafaafafafafa"}}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "tasks" SET "description" = 'aaaagagaaafafaafafafafa', "updated_at" = '2011-06-06 22:03:33.988826' WHERE "tasks"."id" = 31
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 56ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:03:34 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.3ms)
+Rendered tasks/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 85ms (Views: 79.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:03:45 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.8ms)
+Rendered tasks/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 23ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/31/edit" for 127.0.0.1 at Mon Jun 06 18:03:46 -0400 2011
+  Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1[0m
+Rendered tasks/edit.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 21ms (Views: 14.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tasks/31" for 127.0.0.1 at Mon Jun 06 18:03:51 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"commit"=>"Update Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"31", "task"=>{"name"=>"aa", "description"=>"afaaaaaa"}}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE "tasks" SET "description" = 'afaaaaaa', "updated_at" = '2011-06-06 22:03:51.147413' WHERE "tasks"."id" = 31[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 39ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:03:51 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.0ms)
+Rendered tasks/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 21ms (Views: 15.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tasks/31/edit" for 127.0.0.1 at Mon Jun 06 18:04:02 -0400 2011
+  Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1[0m
+Rendered tasks/edit.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 22ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tasks/31" for 127.0.0.1 at Mon Jun 06 18:04:05 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"commit"=>"Update Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"31", "task"=>{"name"=>"aa", "description"=>"afaaaaaaafafa"}}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE "tasks" SET "description" = 'afaaaaaaafafa', "updated_at" = '2011-06-06 22:04:05.542116' WHERE "tasks"."id" = 31[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 14ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:04:05 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.2ms)
+Rendered tasks/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 23ms (Views: 16.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:06:22 -0400 2011
+
+SyntaxError (/Users/tylermoore/Code/Chorenivore/app/controllers/tasks_controller.rb:63: syntax error, unexpected tSTRING_BEG, expecting kEND
+        flash.now[:notice] "Task was successfully updated."
+                            ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:07:30 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.7ms)
+Rendered tasks/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 23ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:09:03 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.1ms)
+Rendered tasks/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 22ms (Views: 16.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/31/edit" for 127.0.0.1 at Mon Jun 06 18:09:05 -0400 2011
+  Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1[0m
+Rendered tasks/edit.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tasks/31" for 127.0.0.1 at Mon Jun 06 18:09:08 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"commit"=>"Update Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"31", "task"=>{"name"=>"aa", "description"=>"afaaaaaaafafaafafa"}}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1
+  [1m[36mAREL (38.0ms)[0m  [1mUPDATE "tasks" SET "description" = 'afaaaaaaafafaafafa', "updated_at" = '2011-06-06 22:09:08.444104' WHERE "tasks"."id" = 31[0m
+Redirected to 
+Completed   in 52ms
+
+TypeError (can't convert Symbol into String):
+  app/controllers/tasks_controller.rb:63:in `update'
+  app/controllers/tasks_controller.rb:61:in `update'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.3ms)
+
+
+Started GET "/tasks/31/edit" for 127.0.0.1 at Mon Jun 06 18:09:23 -0400 2011
+  Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1
+Rendered tasks/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 85ms (Views: 15.1ms | ActiveRecord: 38.4ms)
+
+
+Started POST "/tasks/31" for 127.0.0.1 at Mon Jun 06 18:09:25 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"commit"=>"Update Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"31", "task"=>{"name"=>"aa", "description"=>"afaaaaaaafafaafafa"}}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 12ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:09:25 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.1ms)
+Rendered tasks/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 37ms (Views: 16.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks/31/edit" for 127.0.0.1 at Mon Jun 06 18:09:34 -0400 2011
+  Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1[0m
+Rendered tasks/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 22ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tasks/31" for 127.0.0.1 at Mon Jun 06 18:09:39 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"commit"=>"Update Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"31", "task"=>{"name"=>"aa", "description"=>"afaaaaaaafafaafafaagoagioaghaioghoahgioahgiaohgiahgiahgiahgiahgiahg"}}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "tasks" SET "updated_at" = '2011-06-06 22:09:39.767762', "description" = 'afaaaaaaafafaafafaagoagioaghaioghoahgioahgiaohgiahgiahgiahgiahgiahg' WHERE "tasks"."id" = 31[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 14ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:09:39 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.5ms)
+Rendered tasks/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 23ms (Views: 17.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:21:01 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.7ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (46.3ms)
+Rendered tasks/index.html.erb within layouts/application (59.0ms)
+Completed   in 71ms
+
+ActionView::Template::Error (undefined local variable or method `task' for #<#<Class:0x103cd2220>:0x103ccd860>):
+    6:     <th>Created</th>
+    7:     
+    8:   </tr>
+    9: <% if task == @current_task %>
+    10: <tr id = "current_task">
+    11: <% else %>
+    12: <tr>
+  app/views/tasks/_yestask.html.erb:9:in `_app_views_tasks__yestask_html_erb___1000678401_2179331300_1902910'
+  app/views/tasks/index.html.erb:6:in `_app_views_tasks_index_html_erb___287999715_2179354520_0'
+  app/controllers/tasks_controller.rb:7:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:21:14 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (8.0ms)
+Rendered tasks/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 23ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:28:27 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (1.1ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (10.9ms)
+Rendered tasks/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 39ms (Views: 23.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/tasks/31/edit" for 127.0.0.1 at Mon Jun 06 18:30:00 -0400 2011
+  Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1
+Rendered tasks/edit.html.erb within layouts/application (1552.6ms)
+Completed 200 OK in 1568ms (Views: 1562.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tasks/31" for 127.0.0.1 at Mon Jun 06 18:30:06 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"commit"=>"Update Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"31", "task"=>{"name"=>"aa", "description"=>"afaaaaaaafafaafafaagoagioaghaioghoahgioahgiaohgiahgiahgiahgiahgiahg"}}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 12ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:30:06 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (6.8ms)
+Rendered tasks/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 23ms (Views: 16.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at Mon Jun 06 18:30:26 -0400 2011
+  Processing by TasksController#new as HTML
+Rendered tasks/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 94ms (Views: 88.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at Mon Jun 06 18:30:31 -0400 2011
+  Processing by TasksController#create as HTML
+  Parameters: {"commit"=>"Create Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "task"=>{"name"=>"tata", "description"=>"tat"}}
+  [1m[36mAREL (50.8ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "updated_at", "finished", "name") VALUES ('2011-06-06 22:30:31.128020', 'tat', '2011-06-06 22:30:31.128020', NULL, 'tata')[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 64ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:30:31 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (9.2ms)
+Rendered tasks/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 24ms (Views: 18.1ms | ActiveRecord: 51.2ms)
+
+
+Started POST "/tasks/31" for 127.0.0.1 at Mon Jun 06 18:30:37 -0400 2011
+  Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "id"=>"31"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 31 LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = 31
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 80ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:30:37 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.2ms)
+Rendered tasks/index.html.erb within layouts/application (55.8ms)
+Completed 200 OK in 68ms (Views: 61.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:35:31 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (8.2ms)
+Rendered tasks/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 27ms (Views: 20.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:35:39 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.7ms)
+Rendered tasks/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 24ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:36:00 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.7ms)
+Rendered tasks/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 24ms (Views: 18.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:36:09 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (8.2ms)
+Rendered tasks/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 23ms (Views: 17.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/32/edit" for 127.0.0.1 at Mon Jun 06 18:36:34 -0400 2011
+  Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 32 LIMIT 1
+Rendered tasks/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 86ms (Views: 16.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tasks/32" for 127.0.0.1 at Mon Jun 06 18:36:37 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"commit"=>"Update Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"32", "task"=>{"name"=>"tata", "description"=>"tat"}}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 32 LIMIT 1[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 11ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:36:37 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (6.7ms)
+Rendered tasks/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 21ms (Views: 15.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:36:49 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.3ms)
+Rendered tasks/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 129ms (Views: 59.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/32/edit" for 127.0.0.1 at Mon Jun 06 18:36:51 -0400 2011
+  Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 32 LIMIT 1
+Rendered tasks/edit.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 22ms (Views: 14.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tasks/32" for 127.0.0.1 at Mon Jun 06 18:36:54 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"commit"=>"Update Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"32", "task"=>{"name"=>"tata", "description"=>"tat"}}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 32 LIMIT 1[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 25ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:36:54 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.6ms)
+Rendered tasks/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 24ms (Views: 17.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:37:18 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.8ms)
+Rendered tasks/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 23ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:37:55 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.4ms)
+Rendered tasks/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 23ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:38:32 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.1ms)
+Rendered tasks/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 23ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:39:23 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.0ms)
+Rendered tasks/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 23ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:40:43 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (6.7ms)
+Rendered tasks/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 22ms (Views: 16.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:40:53 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (6.9ms)
+Rendered tasks/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 23ms (Views: 16.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:41:06 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.7ms)
+Rendered tasks/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 84ms (Views: 78.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:41:19 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.4ms)
+Rendered tasks/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 24ms (Views: 17.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:41:24 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.4ms)
+Rendered tasks/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 23ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:41:34 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.7ms)
+Rendered tasks/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 23ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:41:50 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.7ms)
+Rendered tasks/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 24ms (Views: 18.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:42:06 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.8ms)
+Rendered tasks/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:42:14 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.5ms)
+Rendered tasks/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 24ms (Views: 17.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:42:52 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.1ms)
+Rendered tasks/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 23ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:44:00 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (6.8ms)
+Rendered tasks/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 22ms (Views: 16.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:44:50 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (6.8ms)
+Rendered tasks/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 83ms (Views: 77.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:46:11 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.0ms)
+Rendered tasks/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 23ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:47:39 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.5ms)
+Rendered tasks/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 24ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:47:47 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (6.9ms)
+Rendered tasks/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 22ms (Views: 16.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:47:53 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.2ms)
+Rendered tasks/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 23ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:48:05 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.0ms)
+Rendered tasks/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 22ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:48:13 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.8ms)
+Rendered tasks/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 24ms (Views: 18.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:48:51 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.9ms)
+Rendered tasks/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 24ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:49:12 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (8.2ms)
+Rendered tasks/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 25ms (Views: 18.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 18:49:31 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (65.2ms)
+Rendered tasks/index.html.erb within layouts/application (69.2ms)
+Completed 200 OK in 81ms (Views: 75.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 06 20:58:33 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (111.8ms)
+Rendered tasks/index.html.erb within layouts/application (116.2ms)
+Completed 200 OK in 178ms (Views: 122.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 06 20:58:57 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.6ms)
+Rendered tasks/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 23ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 06 21:00:32 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.4ms)
+Rendered tasks/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 24ms (Views: 17.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 06 21:01:31 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.3ms)
+Rendered tasks/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 24ms (Views: 17.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 06 21:01:44 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (67.4ms)
+Rendered tasks/index.html.erb within layouts/application (71.6ms)
+Completed 200 OK in 83ms (Views: 77.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/32/edit" for 127.0.0.1 at Mon Jun 06 21:01:58 -0400 2011
+  Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 32 LIMIT 1[0m
+Rendered tasks/edit.html.erb within layouts/application (119.6ms)
+Completed 200 OK in 150ms (Views: 143.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/tasks/32" for 127.0.0.1 at Mon Jun 06 21:02:14 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"x"=>"25", "y"=>"11", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"32", "task"=>{"finished"=>"true"}}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 32 LIMIT 1
+  [1m[36mAREL (8.3ms)[0m  [1mUPDATE "tasks" SET "finished" = 't', "updated_at" = '2011-06-07 01:02:14.407123' WHERE "tasks"."id" = 32[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 46ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:02:14 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.0ms)
+Rendered tasks/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 82ms (Views: 15.8ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:03:32 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (6.9ms)
+Rendered tasks/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 24ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:03:48 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (6.7ms)
+Rendered tasks/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 22ms (Views: 16.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:03:57 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.5ms)
+Rendered tasks/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 23ms (Views: 17.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:04:21 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.0ms)
+Rendered tasks/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 23ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/tasks/32" for 127.0.0.1 at Mon Jun 06 21:04:23 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"x"=>"17", "y"=>"7", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"32", "task"=>{"finished"=>"false"}}
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 32 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "tasks" SET "finished" = 'f', "updated_at" = '2011-06-07 01:04:24.002678' WHERE "tasks"."id" = 32
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 16ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:04:24 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.2ms)
+Rendered tasks/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 24ms (Views: 17.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/tasks/32" for 127.0.0.1 at Mon Jun 06 21:04:25 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"x"=>"23", "y"=>"17", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"32", "task"=>{"finished"=>"true"}}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 32 LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE "tasks" SET "finished" = 't', "updated_at" = '2011-06-07 01:04:25.851211' WHERE "tasks"."id" = 32[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 15ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:04:25 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.4ms)
+Rendered tasks/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 22ms (Views: 16.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:05:03 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.8ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.0ms)
+Rendered tasks/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 23ms (Views: 16.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:05:25 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (65.7ms)
+Rendered tasks/index.html.erb within layouts/application (69.7ms)
+Completed 200 OK in 82ms (Views: 76.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:05:45 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (6.7ms)
+Rendered tasks/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 22ms (Views: 15.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:05:55 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.0ms)
+Rendered tasks/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 51ms (Views: 44.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:06:17 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.8ms)
+Rendered tasks/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 23ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:06:44 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (10.4ms)
+Rendered tasks/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 26ms (Views: 20.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:07:13 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (6.6ms)
+Rendered tasks/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 21ms (Views: 15.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at Mon Jun 06 21:08:56 -0400 2011
+  Processing by TasksController#new as HTML
+Rendered tasks/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 48ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at Mon Jun 06 21:09:04 -0400 2011
+  Processing by TasksController#create as HTML
+  Parameters: {"commit"=>"Create Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "task"=>{"name"=>"jagoua0g9uaguaguaog", "description"=>"teststststt"}}
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "tasks" ("updated_at", "finished", "description", "created_at", "name") VALUES ('2011-06-07 01:09:04.362420', NULL, 'teststststt', '2011-06-07 01:09:04.362420', 'jagoua0g9uaguaguaog')
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 22ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:09:04 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (10.6ms)
+Rendered tasks/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 26ms (Views: 19.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tasks/33" for 127.0.0.1 at Mon Jun 06 21:09:13 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"x"=>"26", "y"=>"5", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"33", "task"=>{"finished"=>"true"}}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 33 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "tasks" SET "finished" = 't', "updated_at" = '2011-06-07 01:09:13.837176' WHERE "tasks"."id" = 33[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 15ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:09:13 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (11.0ms)
+Rendered tasks/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 26ms (Views: 20.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tasks/33" for 127.0.0.1 at Mon Jun 06 21:09:16 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"x"=>"21", "y"=>"15", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"33", "task"=>{"finished"=>"false"}}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 33 LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE "tasks" SET "finished" = 'f', "updated_at" = '2011-06-07 01:09:16.251910' WHERE "tasks"."id" = 33
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 15ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:09:16 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (11.0ms)
+Rendered tasks/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 26ms (Views: 20.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/tasks/32" for 127.0.0.1 at Mon Jun 06 21:09:20 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"x"=>"20", "y"=>"15", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"32", "task"=>{"finished"=>"false"}}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 32 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "tasks" SET "updated_at" = '2011-06-07 01:09:20.624703', "finished" = 'f' WHERE "tasks"."id" = 32[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 80ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:09:20 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (10.3ms)
+Rendered tasks/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 26ms (Views: 20.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/tasks/33" for 127.0.0.1 at Mon Jun 06 21:09:32 -0400 2011
+  Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "id"=>"33"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 33 LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = 33
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 14ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:09:32 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (6.8ms)
+Rendered tasks/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 84ms (Views: 16.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/tasks/32" for 127.0.0.1 at Mon Jun 06 21:09:36 -0400 2011
+  Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "id"=>"32"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 32 LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mDELETE FROM "tasks" WHERE "tasks"."id" = 32[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 14ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:09:36 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.3ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_notask.html.erb (1.2ms)
+Rendered tasks/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:10:00 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_notask.html.erb (0.7ms)
+Rendered tasks/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:10:11 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.3ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_notask.html.erb (0.9ms)
+Rendered tasks/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at Mon Jun 06 21:10:13 -0400 2011
+  Processing by TasksController#new as HTML
+Rendered tasks/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 21ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at Mon Jun 06 21:10:24 -0400 2011
+  Processing by TasksController#create as HTML
+  Parameters: {"commit"=>"Create Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "task"=>{"name"=>"Test", "description"=>"This is a new task."}}
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "tasks" ("updated_at", "created_at", "name", "finished", "description") VALUES ('2011-06-07 01:10:24.492515', '2011-06-07 01:10:24.492515', 'Test', NULL, 'This is a new task.')[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 48ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:10:24 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.9ms)
+Rendered tasks/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 24ms (Views: 18.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/tasks/34" for 127.0.0.1 at Mon Jun 06 21:10:27 -0400 2011
+  Processing by TasksController#update as HTML
+  Parameters: {"x"=>"14", "y"=>"14", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "id"=>"34", "task"=>{"finished"=>"true"}}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 34 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "tasks" SET "updated_at" = '2011-06-07 01:10:27.754005', "finished" = 't' WHERE "tasks"."id" = 34
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 16ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:10:27 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (7.4ms)
+Rendered tasks/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 22ms (Views: 16.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:11:13 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.3ms)
+Rendered tasks/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 87ms (Views: 17.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:11:33 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (6.8ms)
+Rendered tasks/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 21ms (Views: 16.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:11:46 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.1ms)
+Rendered tasks/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 22ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at Mon Jun 06 21:11:58 -0400 2011
+  Processing by TasksController#new as HTML
+Rendered tasks/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 19ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at Mon Jun 06 21:12:07 -0400 2011
+  Processing by TasksController#create as HTML
+  Parameters: {"commit"=>"Create Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "task"=>{"name"=>"Another task", "description"=>"Does this work too?"}}
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "tasks" ("finished", "name", "description", "updated_at", "created_at") VALUES (NULL, 'Another task', 'Does this work too?', '2011-06-07 01:12:07.098775', '2011-06-07 01:12:07.098775')[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 14ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:12:07 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (9.2ms)
+Rendered tasks/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 25ms (Views: 19.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:12:20 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (9.7ms)
+Rendered tasks/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 25ms (Views: 19.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:12:22 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (8.6ms)
+Rendered tasks/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 24ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:12:30 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (70.4ms)
+Rendered tasks/index.html.erb within layouts/application (74.4ms)
+Completed 200 OK in 85ms (Views: 79.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:12:38 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (9.1ms)
+Rendered tasks/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 25ms (Views: 18.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:12:49 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (9.1ms)
+Rendered tasks/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 24ms (Views: 18.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:12:59 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (9.4ms)
+Rendered tasks/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 26ms (Views: 19.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:16:59 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (10.0ms)
+Rendered tasks/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 26ms (Views: 19.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:18:17 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (87.2ms)
+Rendered tasks/index.html.erb within layouts/application (91.8ms)
+Completed 200 OK in 104ms (Views: 98.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:19:32 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (44.6ms)
+Rendered tasks/index.html.erb within layouts/application (60.9ms)
+Completed 200 OK in 198ms (Views: 131.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:23:40 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (27.1ms)
+Rendered tasks/index.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 78ms (Views: 49.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:24:24 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (49.0ms)
+Rendered tasks/index.html.erb within layouts/application (67.9ms)
+Completed 200 OK in 80ms (Views: 73.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:25:32 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (17.5ms)
+Rendered tasks/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 35ms (Views: 26.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:26:33 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_yestask.html.erb (9.3ms)
+Rendered tasks/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 83ms (Views: 77.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/tasks/34" for 127.0.0.1 at Mon Jun 06 21:26:37 -0400 2011
+  Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "id"=>"34"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 34 LIMIT 1
+  [1m[36mAREL (19.5ms)[0m  [1mDELETE FROM "tasks" WHERE "tasks"."id" = 34[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 32ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:26:37 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (6.7ms)
+Rendered tasks/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 22ms (Views: 15.8ms | ActiveRecord: 20.1ms)
+
+
+Started POST "/tasks/35" for 127.0.0.1 at Mon Jun 06 21:26:40 -0400 2011
+  Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "id"=>"35"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 35 LIMIT 1[0m
+  [1m[35mAREL (0.6ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = 35
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 13ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:26:40 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Rendered tasks/_notask.html.erb (0.7ms)
+Rendered tasks/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 47ms (Views: 10.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:27:46 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.3ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_notask.html.erb (0.7ms)
+Rendered tasks/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 73ms (Views: 9.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at Mon Jun 06 21:30:10 -0400 2011
+  Processing by TasksController#new as HTML
+Rendered tasks/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 20ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at Mon Jun 06 21:30:18 -0400 2011
+  Processing by TasksController#create as HTML
+  Parameters: {"commit"=>"Create Task", "authenticity_token"=>"A6hFM6VJY/NRUNRJKpmpnQawQOFdtga66LgLY5vuWPI=", "utf8"=>"✓", "task"=>{"name"=>"test", "description"=>"stata"}}
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "tasks" ("name", "description", "updated_at", "created_at", "finished") VALUES ('test', 'stata', '2011-06-07 01:30:18.337176', '2011-06-07 01:30:18.337176', NULL)[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 14ms
+
+
+Started GET "/tasks" for 127.0.0.1 at Mon Jun 06 21:30:18 -0400 2011
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Rendered tasks/_yestask.html.erb (7.3ms)
+Rendered tasks/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 217ms (Views: 79.6ms | ActiveRecord: 0.7ms)

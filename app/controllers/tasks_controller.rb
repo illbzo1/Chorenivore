@@ -48,6 +48,7 @@ class TasksController < ApplicationController
         format.xml  { render :xml => @task, :status => :created, :location => @task }
       else
         format.html { render :action => "new" }
+        format.js   { @current_task = @task } 
         format.xml  { render :xml => @task.errors, :status => :unprocessable_entity }
       end
     end
@@ -68,14 +69,6 @@ class TasksController < ApplicationController
       end
     end
   end
-  
-  #def finish
-     #{ redirect_to(tasks_path, :notice => 'Task completed!') }
-  #end
-
-  #def unfinish
-     #{ redirect_to(tasks_path, :notice => 'Did you forget something?') }
-  #end
   
   # DELETE /tasks/1
   # DELETE /tasks/1.xml
