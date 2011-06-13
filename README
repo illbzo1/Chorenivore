@@ -6,10 +6,7 @@ It's also serving as my first ADVENTURE into github.
 
 To do:
 
-A way to toggle between Yes/No in the Finished? column from the view
-Making flash notices disappear after a few seconds
-If there are no tasks, the view will not display the Task / Description / Finished? columns. Instead display something along the lines of "Nothing has been entered yet. Create some tasks!"
-Change all instances of task to chore, to fit with the name.
+When a Chore is edited, it needs to display a different message. Right now, it's flashing the same message as when a Chore is marked as finished.
 Display age of tasks in the view, then allowing users to sort by age.
 
 ---
@@ -42,3 +39,9 @@ The view no longer shows the headings for tasks unless a task has been created. 
 First styling
 
 Added some quick styling, mostly to improve the display of the Tasks table. I may have gotten a little carried away trying to sex this thing up prematurely. I also took the boolean task.finished? field out of the view, since that information is handled by the hidden field and the form_for buttons. Speaking of buttons, I edited them to have a transparent background, as well. I'd forgotten they had a white background until I started messing around with the CSS.
+
+---
+
+Adding Jquery
+
+Another big update! I've switched over to Jquery from Prototype, which allows me to control how long flash notices stick around when a chore is updated or destroyed. I've also changed all instances of Task to Chore, to better fit with the name of this application. I've also got custom messages when a Chore is marked as finished or unfinished.

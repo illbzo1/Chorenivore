@@ -1,5 +1,5 @@
 body {
-  background-color: #eee;
+  background-color: #ddd;
   font-family: Verdana, Helvetica, Arial;
   font-size: 14px;
 }
@@ -11,8 +11,12 @@ a img {
 a {
   color: #36393D;
   font-weight: bold;
-}
+  text-decoration: none;
+  }
 
+a:hover {
+  text-decoration: underline;
+}
 .clear {
   clear: both;
   height: 0;
@@ -20,7 +24,7 @@ a {
 }
 
 hr {
-  border: dashed 1px #aaa;
+  border: dashed 1px #ddd;
 }
 
 th, td
@@ -29,12 +33,14 @@ th, td
       padding-right: 10px;
       padding-bottom: 2px;
     }
-    
+
 #container {
   width: 75%;
   margin: 0 auto;
   background-color: #fff;
-  padding: 20px 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
   border-left: solid 2px #aaa;
   border-right: solid 1px #aaa;
   border-top: solid 1px #aaa;
@@ -42,19 +48,16 @@ th, td
   margin-top: 20px;
 }
 
+#flash {
+  width: 100%;
+  height: 20px;
+  padding: 5px;
+}
+
 #flash_notice, #flash_error, #flash_alert {
-  padding: 5px 8px;
-  margin: 10px 0;
-}
-
-#flash_notice {
-  background-color: #CFC;
-  border: solid 1px #6C6;
-}
-
-#flash_error, #flash_alert {
-  background-color: #FCC;
-  border: solid 1px #C66;
+  background-color: #0033FF;
+  color: #ffffff;
+  padding: 5px;
 }
 
 .fieldWithErrors {

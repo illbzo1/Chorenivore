@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @chore.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @chore.description %>
+</p>
+
+<p>
+  <b>Finished:</b>
+  <%= @chore.finished? ? 'Yes' : 'No' %>
+</p>
+
+<%= link_to 'Edit', edit_chore_path(@chore) %> |
+<%= link_to 'Back to chore List', chores_path %>

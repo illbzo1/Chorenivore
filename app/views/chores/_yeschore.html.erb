@@ -1,0 +1,33 @@
+<table>
+  <tr>
+    <th>Done</th>
+    <th>Chore</th>
+    <th>Description</th>
+    <th>Created</th>
+    
+  </tr>
+
+<% @chores.each do |chore| %>
+  <tr>
+  <td>
+  <%= form_for(chore) do |f| %>
+    <%= f.hidden_field :finished, :value => !chore.finished %>
+    <div class="actions">
+      <% if chore.finished %>
+        <%= image_submit_tag 'finished.png' %>
+      <% else %>
+        <%= image_submit_tag 'unfinished.png' %>
+      <% end %>
+    </div>
+  <% end %>
+  </td>
+    <td><%= chore.name %></td>
+    <td><%= chore.description %></td>
+    <td><%= chore.created_at.to_s(:simple_date) %></td>    
+    <td><%= link_to 'Edit', edit_chore_path(chore) %></td>
+    <td><%= link_to 'Delete', chore, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<hr />
+<%= link_to 'Add Another Chore', new_chore_path %>

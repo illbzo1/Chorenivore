@@ -1,0 +1,15 @@
+<h1 id="title">Chorenivore</h1>
+Welcome to Chorenivore! Chorenivore is an easy-to-use web based to-do list application. Dig in and get your productivity right!
+<div id="flash">
+  <% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, :id => "flash_#{name}" %>
+  <% end %>
+</div>
+<hr />
+
+<% if @chores.blank? %>
+  <%= render 'nochore' %>
+<% else %>
+  <%= render 'yeschore' %>
+<% end %>
+

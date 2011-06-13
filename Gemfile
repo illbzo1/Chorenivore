@@ -12,6 +12,8 @@ gem 'sqlite3'
 
 gem 'nifty-generators'
 
+gem "jquery-rails"
+
 # Deploy with Capistrano
 # gem 'capistrano'
 
