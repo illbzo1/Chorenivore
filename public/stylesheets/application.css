@@ -27,6 +27,14 @@ hr {
   border: dashed 1px #ddd;
 }
 
+table
+  { 
+    border-collapse: collapse;
+    }
+tr
+{
+
+}
 th, td
     {
       text-align: left;
@@ -60,6 +68,17 @@ th, td
   padding: 5px;
 }
 
+.even_line {
+  background:   #eee;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.odd_line {
+  background:   #ddd;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
 .fieldWithErrors {
   display: inline;
 }

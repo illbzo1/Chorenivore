@@ -6,7 +6,6 @@ It's also serving as my first ADVENTURE into github.
 
 To do:
 
-When a Chore is edited, it needs to display a different message. Right now, it's flashing the same message as when a Chore is marked as finished.
 Display age of tasks in the view, then allowing users to sort by age.
 
 ---
@@ -42,6 +41,10 @@ Added some quick styling, mostly to improve the display of the Tasks table. I ma
 
 ---
 
-Adding Jquery
+Added Jquery functionality
 
 Another big update! I've switched over to Jquery from Prototype, which allows me to control how long flash notices stick around when a chore is updated or destroyed. I've also changed all instances of Task to Chore, to better fit with the name of this application. I've also got custom messages when a Chore is marked as finished or unfinished.
+
+Working on the CSS
+
+Not a huge update this time. I'm working through Agile Web Development with Rails and applying some things I've learned to Chorenivore. This means some (minor) CSS changes. Chores now have an alternating colored background as well as top and bottom borders. I've also updated the form for creating a new Chore, so the description box is only 6 rows tall.

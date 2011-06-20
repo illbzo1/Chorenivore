@@ -8,7 +8,7 @@
   </tr>
 
 <% @chores.each do |chore| %>
-  <tr>
+  <tr class="<%= cycle('odd_line', 'even_line') %>">
   <td>
   <%= form_for(chore) do |f| %>
     <%= f.hidden_field :finished, :value => !chore.finished %>
