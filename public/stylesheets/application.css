@@ -43,7 +43,7 @@ th, td
     }
 
 #container {
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
   background-color: #fff;
   padding-left: 25px;
@@ -69,15 +69,13 @@ th, td
 }
 
 .even_line {
-  background:   #eee;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border: dashed 1px #bbb;
+  
 }
 
 .odd_line {
-  background:   #ddd;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border: dashed 1px #aaa;
+  
 }
 .fieldWithErrors {
   display: inline;
