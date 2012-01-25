@@ -1,11 +1,4 @@
 <table>
-  <tr>
-    <th>Done</th>
-    <th>Chore</th>
-    <th>Description</th>
-    <th>Created</th>
-    
-  </tr>
 
 <% @chores.each do |chore| %>
   <tr class="<%= cycle('odd_line', 'even_line') %>">
@@ -29,5 +22,3 @@
   </tr>
 <% end %>
 </table>
-<hr />
-<%= link_to 'Add Another Chore', new_chore_path %>
