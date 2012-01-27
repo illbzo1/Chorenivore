@@ -14,12 +14,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label 'What\'s the chore?' %><br />
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :description %><br />
+    <%= f.label 'Need more information?' %><br />
     <%= f.text_area :description, :rows => 6 %>
+  </div>
+  <div class="field">
+    <%= f.label 'Which day should this be completed?' %><br />
+    <%= f.text_field :day %>
   </div>
   <div class="actions">
     <%= f.submit %>

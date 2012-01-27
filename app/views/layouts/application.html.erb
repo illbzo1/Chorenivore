@@ -3,7 +3,7 @@
   <head>
     <title><%= content_for?(:title) ? yield(:title) : "Chorenivore" %></title>
     <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag :defaults, 'jquery_ujs' %>
+    <%= javascript_include_tag :defaults, 'bootstrap-tabs', 'jquery_ujs' %>
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
   </head>
@@ -13,5 +13,10 @@
         <%= yield %>
 
     </div>
+    <script>
+      $(function () {
+        $('.tabs').tabs()
+      })
+    </script>
   </body>
 </html>
